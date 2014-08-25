@@ -1,0 +1,16 @@
+
+*.scssc
+
+*.sassc
+
+*.map
+
+.bzr
+CVS
+.svn
+.DS_Store
+*~
+*.swp
+._*
+node_modules
+node_modules/*

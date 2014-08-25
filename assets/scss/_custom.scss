@@ -1,0 +1,122 @@
+
+
+/* breakpoints */
+$desk-max : 1400px;
+$desk : 1280px;
+$pad : 650px;
+$phone : 649px;
+
+@mixin breakpoint($point) {
+  @if $point == desk-max {
+    @media (min-width: $desk-max) { @content; }
+  }
+  @if $point == desk {
+    @media (min-width: $desk) { @content; }
+  }
+  @if $point == pad {
+    @media (min-width:$pad)  { @content; }
+  }
+  @else if $point == phone {
+    @media (max-width:$phone)  { @content; }
+  }
+}
+
+
+@mixin center-align {
+	position: relative;
+	top: 50%;
+	left:50%;
+	@include transform(translate(-50%,-50%));
+}
+/* ---------
+Vertical Align
+----------*/
+@mixin vertical-align {
+	position: relative;
+	top: 50%;
+	@include transform(translateY(-50%));
+}
+.vertical-align{
+	@include vertical-align();
+}
+@mixin vertical-align-70 {
+	position: relative;
+	top: 70%;
+	@include transform(translateY(-50%));
+}
+.vertical-align-70{
+	@include vertical-align-70();
+	position:absolute;
+	left:0;
+}
+.vertical-align-bottom{
+	position:absolute;
+	bottom:0;
+}
+/* ---------
+Horizontal Align
+----------*/
+@mixin horizontal-align {
+	position: relative;
+	left: 50%;
+	@include transform(translateX(-50%));
+}
+
+
+
+/* ---------
+Creates pad classes based on the numbers input
+----------*/
+.pad-right-2{
+	padding-right:2%;
+}
+@each $num in (0,1,2,4,6,8,10,12,16) {
+	$tempI: ($num/100) * 100%;
+	.pad-#{$num} {
+		padding-top:$tempI;
+		padding-bottom:$tempI;
+	}
+}
+@each $num in (0,1,2,4,5,6,8,10) {
+	$tempI: $num;
+	.pad-top-#{$num}em {
+		padding-top:#{$num}em;
+	}
+}
+@each $num in (0,1,2,4,6,8,10,12,16) {
+	$tempI: ($num/100) * 100%;
+	.pad-top-#{$num} {
+		padding-top:$tempI;
+	}
+}
+@each $num in (0,1,2,4,6,8,10,12,16) {
+	$tempI: ($num/100) * 100%;
+	.pad-bottom-#{$num} {
+		padding-bottom:$tempI;
+	}
+}
+@each $num in (0,1,2,4,6,8,10,12,16) {
+	$tempI: ($num/100) * 100%;
+	.margin-#{$num} {
+		margin-top:$tempI;
+		margin-bottom:$tempI;
+	}
+}
+@each $num in (0,1,2,4,6,8,10,12,14,16) {
+	$tempI: ($num/100) * 100%;
+	.margin-top-#{$num} {
+		margin-top:$tempI;
+	}
+}
+@each $num in (0,1,2,4,5,6,8,10) {
+	$tempI: $num;
+	.margin-top-#{$num}em {
+		margin-top:#{$num}em;
+	}
+}
+@each $num in (0,1,2,4,6,8,10,12,14,16) {
+	$tempI: ($num/100) * 100%;
+	.margin-bottom-#{$num} {
+		margin-bottom:$tempI;
+	}
+}

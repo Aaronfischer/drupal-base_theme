@@ -1,9 +1,8 @@
 
-Introduction to Basic
+Introduction to @aaronfischer's Drupal Starter Theme/Boilerplate or base_theme (adaptation of Basic theme)
 
 Basic boasts a clean HTML5 structure with extensible CSS classes and ID's for unlimited
-theming possibilities as well as a top-down load order for improved SEO. It is fully
-responsive out-of-the-box and provides an adaptive, elegant, SASS based grid system (Bourbon Neat).
+theming possibilities as well as a top-down load order for improved SEO.
 
 Basic's goal is to provide themers the building blocks needed to get their designs up and
 running quickly and simply.
@@ -21,24 +20,24 @@ Installation
   the following Ruby Gems and plugins:
 
   - SASS (http://sass-lang.com/)
-  - Bourbon (http://bourbon.io/)
-  - Boubon Neat (http://neat.bourbon.io/)
 
-- Basic is meant to be YOUR theme. To change the name of the theme from 'basic' to another name like 'mytheme',
+- base_theme uses GULP, reference the package.json file for included node_modules
+
+- base_theme is meant to be YOUR theme. To change the name of the theme from 'base_theme' to another name like 'mytheme',
 follow these steps (to do BEFORE enabling the theme) :
 
     - rename the theme folder to 'mytheme'
     - rename basic.info to mytheme.info
-    - Edit basic.info and change the name, description, project (can be deleted), replace all other instances of "basic" ie. [basic_tabs] would become [mytheme_tabs]
-    - In template.php change each iteration of 'basic' to 'mytheme'
-    - In theme-settings.php change each iteration of 'basic' to 'mytheme'
+    - Edit base_theme.info and change the name, description, project (can be deleted), replace all other instances of "base_theme" ie. [base_theme_tabs] would become [mytheme_tabs]
+    - In template.php change each iteration of 'base_theme' to 'mytheme'
+    - In theme-settings.php change each iteration of 'base_theme' to 'mytheme'
 
 __________________________________________________________________________________________
 
 What are the files for ?
 ------------------------
 
-- basic.info                => provide informations about the theme, like regions, css, settings, js ...
+- base_theme.info                => provide informations about the theme, like regions, css, settings, js ...
 - block-system-main.tpl.php => template to edit the content
 - block.tpl.php             => template to edit the blocks
 - comment.tpl.php           => template to edit the comments
@@ -51,13 +50,7 @@ What are the files for ?
 In /SASS
 -------
 
-- default.sass  => define default classes, browser resets and admin styles (compiles to css/default.css)
-- ie8.sass      => used to debug IE8 (compiles to css/ie8.css)
-- ie9.sass      => used to debug IE9 (compiles to css/ie9.css)
-- layout.sass   => define the layout of the theme (compiles to css/layout.css)
-- print.sass    => define the way the theme look like when printed (compiles to css/print.css)
-- style.sass    => contains some default font styles. that's where you can add custom css (compiles to css/style.css)
-- tabs.sass     => styles for the admin tabs (from ZEN)
+- This uses an up to date version of the PRPLrs Boilerplate (https://github.com/prplrs/prpl-boilerplate)
 
 __________________________________________________________________________________________
 
@@ -78,21 +71,20 @@ This is how the page template is buit in basic, and it works in fluid and fixed 
 Refers to the notes in layout.css to see how to modify the layout.
 __________________________________________________________________________________________
 
-Using Grunt
+Using Gulp
 
-In order to use grunt (http://gruntjs.com/) with basic you will need to install a few programs.
-These will only be installed the first time you start a project using Basic with Grunt.
+In order to use grunt (http://gulpjs.com/) with basic you will need to install a few programs.
 
 Getting Started
 
 1. Navigate to http://nodejs.org/ and install node.js.
 2. Once you have node installed you will be able to use the npm (node package manager) to install the rest.
-   In order for grunt to work in terminal we are going to need the grunt cli. Open a new terminal window and type "npm install -g grunt-cli" , this will install the cli globally. Restart terminal when that is complete and you will now be able to use grunt commands.
-3. Unzip the grunt.zip file in the root of basic.
+   In order for gulp to work in terminal we are going to need the grunt cli. Open a new terminal window and type "npm install --global gulp" , this will install the gulp globally. Restart terminal when that is complete and you will now be able to use gulp commands.
+3. Install gulp in your project devDependencies: "npm install --save-dev gulp".
 
-How To Use Grunt
+How To Use Gulp
 
-1. cd into the grunt folder and type in "grunt" to start the watch task.
+1. cd into the base_theme and run "gulp watch".
 
 
 __________________________________________________________________________________________
@@ -115,6 +107,9 @@ or bug report:
 
 http://drupal.org/project/issues/basic
 
-Current maintainers:
+base_theme:
+* Aaron Fischer - (@aaronfischer)
+
+Current maintainers (BASIC):
 * Steve Krueger (SteveK) -http://drupal.org/user/111656 (http://thejibe.com)
 * Niall Morgan (lil.destro) -https://drupal.org/user/597808 (http://thejibe.com)

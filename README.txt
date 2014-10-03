@@ -89,16 +89,16 @@ How To Use Gulp
 
 __________________________________________________________________________________________
 
-UPDATING BASIC
+UPDATING base_theme (Basic)
 
-Once you start using basic, you will massively change it until a point where it has nothing
-to do with basic anymore. Unlike ZEN, basic is not intended to be use as a base theme for a
+Once you start using base_theme, you will massively change it until a point where it has nothing
+to do with base_theme anymore. Unlike ZEN, base_theme is not intended to be use as a base theme for a
 sub-theme (even though it is possible to do so). Because of this, it is not necessary to
-update your theme when a new version of BASIC comes out. Always see Basic as a STARTER, and
-as soon as you start using it, it is not BASIC anymore, but your own theme.
+update your theme when a new version of base_theme comes out. Always see base_theme as a STARTER, and
+as soon as you start using it, it is not base_theme anymore, but your own theme.
 
 If you didn't rename your theme, but you don't want to be notified when basic has a new version
-by the update module, simply delete "project = "basic" in basic.info
+by the update module, simply delete "project = "base_theme" in base_theme.info
 
 __________________________________________________________________________________________
 

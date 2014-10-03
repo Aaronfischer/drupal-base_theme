@@ -107,9 +107,9 @@ or bug report:
 
 http://drupal.org/project/issues/basic
 
-base_theme:
-* Aaron Fischer - (@aaronfischer)
+Maintainers of base_theme:
+* Aaron Fischer - (@aaronfischer) - http://aaronbrycefischer.com
 
-Current maintainers (BASIC):
+Maintainers of BASIC:
 * Steve Krueger (SteveK) -http://drupal.org/user/111656 (http://thejibe.com)
 * Niall Morgan (lil.destro) -https://drupal.org/user/597808 (http://thejibe.com)

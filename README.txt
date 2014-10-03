@@ -73,13 +73,13 @@ ________________________________________________________________________________
 
 Using Gulp
 
-In order to use grunt (http://gulpjs.com/) with basic you will need to install a few programs.
+In order to use gulp (http://gulpjs.com/) with basic you will need to install a few programs.
 
 Getting Started
 
 1. Navigate to http://nodejs.org/ and install node.js.
 2. Once you have node installed you will be able to use the npm (node package manager) to install the rest.
-   In order for gulp to work in terminal we are going to need the grunt cli. Open a new terminal window and type "npm install --global gulp" , this will install the gulp globally. Restart terminal when that is complete and you will now be able to use gulp commands.
+   In order for gulp to work in terminal we are going to need the gulp cli. Open a new terminal window and type "npm install --global gulp" , this will install the gulp globally. Restart terminal when that is complete and you will now be able to use gulp commands.
 3. Install gulp in your project devDependencies: "npm install --save-dev gulp".
 
 How To Use Gulp

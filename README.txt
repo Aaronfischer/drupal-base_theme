@@ -1,22 +1,23 @@
 
 Introduction to @aaronfischer's Drupal Starter Theme/Boilerplate or base_theme (adaptation of Basic theme)
 
-Basic boasts a clean HTML5 structure with extensible CSS classes and ID's for unlimited
+base_theme boasts a clean HTML5 structure with extensible CSS classes for unlimited
 theming possibilities as well as a top-down load order for improved SEO.
 
-Basic's goal is to provide themers the building blocks needed to get their designs up and
+base_theme's goal is to provide themers the building blocks needed to get their designs up and
 running quickly and simply.
 
-Basic is perfect if you want a simple, smart, and flexible theme starter.
+base_theme is perfect if you want a simple, smart, and flexible theme starter.
 
-Less code spam, more ham.
+Note from @aaronfischer (base_theme):
+* I've been developing a number of Drupal sites lately and needed a quick/basic theme to get the ball rolling quickly, had good optimization, and was built on a skeleton boilerplate that included the basic classes/overrides I use with every project. BASIC was a great starting point. I have taken BASIC and stripped out a bit of the bloat and what I felt was unncessary code and replaced Grunt with Gulp. It is also using the PRPLrs Boilerplate (https://github.com/prplrs/prpl-boilerplate).
 
 __________________________________________________________________________________________
 
 Installation
 
-- Basic utilizes SASS for adaptive grids and layouts and general structure of the site.
-  It's recommended to use SASS for building out your theme. You are required to download
+- base_theme utilizes SCSS for grids and layouts and general structure of the site.
+  It's recommended to use SCSS for building out your theme. You are required to download
   the following Ruby Gems and plugins:
 
   - SASS (http://sass-lang.com/)

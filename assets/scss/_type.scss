@@ -8,8 +8,6 @@
 *-------------------------------------------------------------------------*/
 
 $defaultFont: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$roboto: 'Roboto', "Helvetica Neue", sans-serif;
-$merriweather: 'Merriweather', Georgia, Times, serif;
 
 $text: 19px;
 $line-height: 1.7em;
@@ -22,7 +20,7 @@ html {
     -moz-osx-font-smoothing: grayscale;
 }
 body {
-    font-family: $merriweather;
+    font-family: $defaultFont;
     font-size: $text;
     line-height: $line-height;
     color: black;
@@ -77,7 +75,6 @@ h6 .small,
 
 h1,
 .h1 {
-    font-family:$defaultFont;
     font-size: 2em;
     line-height:1.2em;
     margin: 0.5em 0;
@@ -85,7 +82,6 @@ h1,
 
 h2,
 .h2 {
-    font-family:$defaultFont;
     font-size: 2.95em;
     font-weight:600;
     line-height:1.1em;
@@ -96,7 +92,6 @@ h2,
 
 h3,
 .h3 {
-    font-family:$defaultFont;
     font-size: 2.05em;
     font-weight:600;
     line-height:1.1em;
@@ -104,7 +99,6 @@ h3,
 
 h4,
 .h4 {
-    font-family:$defaultFont;
     font-weight:500;
     font-size: 1.45em;
     line-height:1.1em;
@@ -112,7 +106,6 @@ h4,
 
 h5,
 .h5 {
-    font-family:$roboto;
     font-weight:600;
     font-size: 0.95em;
     margin:0.35em 0;
@@ -124,7 +117,6 @@ h5,
 
 h6,
 .h6 {
-    font-family:$roboto;
     font-weight:500;
     font-size: 0.65em;
     text-transform:uppercase;

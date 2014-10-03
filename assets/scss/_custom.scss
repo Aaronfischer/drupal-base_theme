@@ -67,9 +67,6 @@ Horizontal Align
 /* ---------
 Creates pad classes based on the numbers input
 ----------*/
-.pad-right-2{
-	padding-right:2%;
-}
 @each $num in (0,1,2,4,6,8,10,12,16) {
 	$tempI: ($num/100) * 100%;
 	.pad-#{$num} {

@@ -54,21 +54,13 @@ In /SASS
 
 __________________________________________________________________________________________
 
-Changing the Layout
+Changing the Grid
 
-The layout used in Basic is fairly similar to the Holy Grail method. It has been tested on
-all major browser including IE (5>10), Opera, Firefox, Safari, Chrome ...
-The purpose of this method is to have a minimal markup for an ideal display.
-For accessibility and search engine optimization, the best order to display a page is ]
-the following :
+The grid used in base_theme is fairly simple. It has been tested on
+all major browser including IE (8+), Opera, Firefox, Safari, Chrome ...
+The purpose of this method is to become as OOCSS as possible.
 
-    1. header
-    2. content
-    3. sidebars
-    4. footer
-
-This is how the page template is buit in basic, and it works in fluid and fixed layout.
-Refers to the notes in layout.css to see how to modify the layout.
+Refers to the notes in grid.scss to see how to modify the grid.
 __________________________________________________________________________________________
 
 Using Gulp

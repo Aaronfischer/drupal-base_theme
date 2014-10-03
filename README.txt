@@ -37,20 +37,20 @@ ________________________________________________________________________________
 What are the files for ?
 ------------------------
 
-- base_theme.info                => provide informations about the theme, like regions, css, settings, js ...
-- block-system-main.tpl.php => template to edit the content
-- block.tpl.php             => template to edit the blocks
-- comment.tpl.php           => template to edit the comments
-- node.tpl.php              => template to edit the nodes (in content)
-- page.tpl.php              => template to edit the page
-- template.php              => used to modify drupal's default behavior before outputting HTML through
+- base_theme.info                		=> provide informations about the theme, like regions, css, settings, js ...
+- block-system-main.tpl.php     	=> template to edit the content
+- block.tpl.php             				=> template to edit the blocks
+- comment.tpl.php           			=> template to edit the comments
+- node.tpl.php              			=> template to edit the nodes (in content)
+- page.tpl.php             				=> template to edit the page
+- template.php              			=> used to modify drupal's default behavior before outputting HTML through
                                the theme
-- theme-settings            => used to create additional settings in the theme settings page
+- theme-settings            			=> used to create additional settings in the theme settings page
 
 In /SASS
 -------
 
-- This uses an up to date version of the PRPLrs Boilerplate (https://github.com/prplrs/prpl-boilerplate)
+- This uses a version of the PRPLrs Boilerplate (https://github.com/prplrs/prpl-boilerplate)
 
 __________________________________________________________________________________________
 

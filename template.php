@@ -341,3 +341,11 @@ function base_theme_menu_local_tasks(&$variables) {
 function base_theme_preprocess_form_element(&$vars) {
   $vars['attributes']['class'][] = 'form-control';
 }
+
+/**
+ * WEBFORM AJAX - added this par this issue:
+ * https://www.drupal.org/node/2150381#comment-8795925
+ */
+function base_theme_form_webform_client_form_alter(&$form, $form_state, $form_id) {
+    $form['actions']['submit']['#attributes']['id'] = 'edit-webform-ajax-submit-'.$form['#node']->nid;
+}

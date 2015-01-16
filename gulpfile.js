@@ -12,7 +12,10 @@ var gulp = require('gulp'),
     concat = require('gulp-concat'),
     notify = require('gulp-notify'),
     cache = require('gulp-cache'),
-    livereload = require('gulp-livereload');
+    livereload = require('gulp-livereload'),
+    rsync = require('rsyncwrapper').rsync,
+    gutil = require('gulp-util'),
+    bless = require('gulp-bless');
 
 gulp.task('styles', function() {
   return gulp.src('assets/scss/style.scss')
@@ -22,6 +25,7 @@ gulp.task('styles', function() {
     .pipe(gulp.dest('assets/css'))
     .pipe(rename({suffix: '.min'}))
     .pipe(minifycss())
+    // .pipe(bless())
     .pipe(gulp.dest('assets/css'))
     .pipe(notify({ message: 'Styles task complete' }));
 });
@@ -49,6 +53,33 @@ gulp.task('images', function() {
 //   return gulp.src(['assets/css', 'assets/js', 'assets/media/img'], {read: false})
 //     .pipe(clean());
 // });
+
+// WARNING THIS WILL REPLACE THE ENTIRE DIRECTORY
+gulp.task('deploy', function() {
+  rsync({
+    ssh: true,
+    src: '/Users/prpl/Sites/XXX/',
+    dest: 'XXX@XXX.prpl.rs:/var/www/vhosts/XXX',
+    recursive: true,
+    args: ['--verbose']
+  }, function(error, stdout, stderr, cmd) {
+      gutil.log(stdout);
+  });
+});
+
+gulp.task('deployAssets', function() {
+  rsync({
+    ssh: true,
+    src: ['assets/'],
+    dest: 'XXX@XXX.prpl.rs:/var/www/vhosts/XXX/sites/all/themes/XXX/assets',
+    exclude: ['.DS_Store','*/*.css','*/*.js','fonts/**','media/**','scss/**','js/vendor/**'],
+    include: ['css/*.min.css','css/style.*.css','js/*.min.js'],
+    recursive: true,
+    args: ['--verbose']
+  }, function(error, stdout, stderr, cmd) {
+      gutil.log(stdout);
+  });
+});
 
 gulp.task('default', function() {
     gulp.start('styles', 'scripts', 'images');
